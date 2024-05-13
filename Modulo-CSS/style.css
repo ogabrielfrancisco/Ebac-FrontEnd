@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;     /*serve para definir que o espaço que eu solicitei não terá alteração */
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;        /*define o espasamento*/
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;      /*para deixar um elemento ao lado do outro*/
+    align-items: center;    /*para deixar os elementos centralizado*/
+    justify-content: space-between;          /*para deixar os espaços iguais*/
+}
+
+header li {
+    display: inline;        /*para deixar os elementos na mesma linha */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366;  /*largura */
+    margin: 0 auto 0 auto;   /*centralizar*/
+}
+
+.articles {
+    display: flex;    /*para deixar um elemento ao lado do outro*/
+    flex-wrap: wrap;        /*para quando adc outra coisa ele quebrar a linha*/
+    justify-content: space-between;         /*para deixar os espaços iguais*/
+}
+
+.articles article img {
+    width: 100%;
+ /*   height: 180px;      define a altura*/
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;        /*define a margem de baixo*/
+}
+
+.articles article h3 {
+    margin-top: 8px;       /*define a margem do topo*/
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;          /*para deixar em negrito*/
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;     /*colocar uma linha ao passar pelo botão*/
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;        /*tamanho da fonte*/
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#esportes .articles article a {
+    background-color: #009432;
+}
+
+#economia {
+    background-color: #f8f59f;
+}
+
+#economia .articles article a {
+    background-color: #ff9f1a;
+}
+
+#entretenimento {
+    background-color: #9fd4ff;
+}
+
+#entretenimento .articles article a {
+    background-color: #0d2446;
+}
+
+#games {
+    background-color: #fa3e77;
+}
+
+#games .articles article a {
+    background-color: #2bbfc9;
+}
